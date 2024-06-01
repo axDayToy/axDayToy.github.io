@@ -3175,10 +3175,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/dm14.webp);
+    --darkmode-bg:url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/yuanshen1.webp);
+    --mobileday-bg: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/snow.webp);
+    --mobilenight-bg: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/mb8.webp);
   }`;
 }
 // 切换背景主函数
@@ -3408,7 +3408,7 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/home_bg.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/home_bg.webp)')"></a></div>
               </div>
             </details>
 
@@ -3417,7 +3417,7 @@ function createWinbox() {
 
 <details class="folding-tag" cyan><summary> 查看风景背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/fj1.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/fj1.webp)')"></a></div>
               </div>
             </details>
 
@@ -3425,7 +3425,7 @@ function createWinbox() {
 
 <details class="folding-tag" cyan><summary> 查看萌宠背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)" class="imgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mc1.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/mc1.webp)" class="imgbox" onclick="changeBg('url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/mc1.webp)')"></a></div>
               </div>
             </details>
 
@@ -3449,7 +3449,7 @@ function createWinbox() {
 <h3>6. 适配手机</h3>
 <details class="folding-tag" cyan><summary> 查看适配手机的背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)" class="pimgbox" onclick="changeBg('url(https://lskypro.acozycotage.net/Fomalhaut/img/mb4.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/mb4.webp)" class="pimgbox" onclick="changeBg('url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/mb4.webp)')"></a></div>
               </div>
             </details>
 

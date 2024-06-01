@@ -6616,13 +6616,13 @@ blockquote.pullquote.right {
 
 @font-face {
   font-family: Consolas_1;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/Consolas.woff2);
+  src: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/fonts/Consolas.woff2);
   font-display: swap;
 }
 
 @font-face {
   font-family: ZhuZiAWan;
-  src: url(https://data-static.netdun.net/Fomalhaut/fonts/ZhuZiAWan2.woff2);
+  src: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/fonts/ZhuZiAWan2.woff2);
   font-display: swap;
 }
 
