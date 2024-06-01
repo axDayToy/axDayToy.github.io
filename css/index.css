@@ -7705,13 +7705,13 @@ button#go-up:hover #percent {
 
 /* 个人信息卡片背景图 */
 [data-theme="light"] #aside-content > .card-widget.card-info {
-  background-image: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/springBg.png);
+  background-image: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/springBg.png);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
 }
 [data-theme="dark"] #aside-content > .card-widget.card-info {
-  background-image: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/aurora.webp);
+  background-image: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/aurora.webp);
   background-repeat: no-repeat;
   background-attachment: inherit;
   background-size: 100%;
@@ -8865,7 +8865,7 @@ span.card-clock-weather {
 }
 
 .btn-xz-box:hover .btn-xz {
-  background-color: var(--text-bg-hover) !important;
+  background-color: var(--border-style) !important;
 }
 
 .t-top .t-t-r {
@@ -8959,6 +8959,7 @@ span.card-clock-weather {
 }
 #footer-wrap a {
   border-radius: 30px;
+  color: var(--light-grey);
 }
 #footer-wrap {
   padding: 20px 20px;
