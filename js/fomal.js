@@ -3175,8 +3175,8 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/dm14.webp);
-    --darkmode-bg:url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/yuanshen1.webp);
+    --default-bg: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/dm12.webp);
+    --darkmode-bg:url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/dark_mode.webp);
     --mobileday-bg: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/snow.webp);
     --mobilenight-bg: url(https://cdn.jsdelivr.net/gh/axDayToy/picgo/img/mb8.webp);
   }`;
