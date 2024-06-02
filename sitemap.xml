@@ -38,15 +38,6 @@
   </url>
   
   <url>
-    <loc>https://www.fomal.cc/personal/love/index.html</loc>
-    
-    <lastmod>2024-06-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.fomal.cc/site/census/index.html</loc>
     
     <lastmod>2024-06-01</lastmod>
@@ -57,6 +48,15 @@
   
   <url>
     <loc>https://www.fomal.cc/site/time/index.html</loc>
+    
+    <lastmod>2024-06-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.fomal.cc/personal/love/index.html</loc>
     
     <lastmod>2024-06-01</lastmod>
     
