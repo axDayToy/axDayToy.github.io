@@ -38,24 +38,38 @@ function percent() {
 
 document.addEventListener('pjax:complete', tonav);
 document.addEventListener('DOMContentLoaded', tonav);
-//响应pjax
+// //响应pjax
+// function tonav() {
+//   document.getElementById("name-container").setAttribute("style", "display:none");
+//   var position = $(window).scrollTop();
+//   $(window).scroll(function () {
+//     var scroll = $(window).scrollTop();
+//     if (scroll > position) {
+//       document.getElementById("name-container").setAttribute("style", "");
+//       document.getElementsByClassName("menus_items")[1].setAttribute("style", "display:none!important");
+//     } else {
+//       document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
+//       document.getElementById("name-container").setAttribute("style", "display:none");
+//     }
+//     position = scroll;
+//   });
+//   //修复没有弄右键菜单的童鞋无法回顶部的问题
+//   console.log(document.title)
+//   document.getElementById("page-name").innerText = document.title.split(" | 阿羡")[0];
+// }
+
 function tonav() {
-  document.getElementById("name-container").setAttribute("style", "display:none");
-  var position = $(window).scrollTop();
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll > position) {
-      document.getElementById("name-container").setAttribute("style", "");
-      document.getElementsByClassName("menus_items")[1].setAttribute("style", "display:none!important");
-    } else {
-      document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
-      document.getElementById("name-container").setAttribute("style", "display:none");
-    }
-    position = scroll;
-  });
-  //修复没有弄右键菜单的童鞋无法回顶部的问题
-  document.getElementById("page-name").innerText = document.title.split(" | Fomalhaut🥝")[0];
+	document.getElementById("name-container").setAttribute("style", "display:none");
+	var e = $(window).scrollTop();
+	$(window).scroll((function() {
+		var t = $(window).scrollTop();
+			t > e ? (document.getElementById("name-container")
+				.setAttribute("style", ""), document.getElementsByClassName("menus_items")[1].setAttribute("style", "display:none!important")) : (document.getElementsByClassName("menus_items")[1].setAttribute("style", ""), document.getElementById("name-container")
+				.setAttribute("style", "display:none")), e = t
+		})), document.getElementById("page-name")
+		.innerText = document.title.split(" | 阿羡")[0]
 }
+
 
 function scrollToTop() {
   document.getElementsByClassName("menus_items")[1].setAttribute("style", "");
@@ -1139,7 +1153,7 @@ function createtime1() {
   setTimeout(
     console.log.bind(
       console,
-      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n`,
       "color:#39c5bb",
       "",
       "color:#39c5bb",

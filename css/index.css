@@ -6663,7 +6663,7 @@ h1.post-title {
 center#name-container {
   position: absolute !important;
   width: fit-content !important;
-  left: 42% !important;
+  left: 50% !important;
   /* transform: translateX(-50%) !important; */
   /* transform: translateY(-100%) !important; */
 }
@@ -8773,7 +8773,7 @@ span.card-clock-weather {
   border-radius: 20px;
   padding: 12px;
   margin: 5px;
-  border: 2px solid #a0a0a0;
+  border: 1px solid #a0a0a0;
 }
 [data-theme="dark"] .about_page {
   background: #252525;
