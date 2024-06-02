@@ -6524,6 +6524,7 @@ blockquote.pullquote.right {
   --btn-bg: var(--theme-color) !important;
   --scrollbar-color: var(--theme-color) !important;
   --border-style: 1px solid rgba(169, 169, 169, 0.7);
+  --hh-trans-color: rgba(57, 197, 187, 0.1);
   /* 代码框行数背景色 */
   --hlnumber-bg: #282c34;
   /* 代码框顶部背景色 */
@@ -7366,10 +7367,25 @@ h6::before {
 }
 
 /* 友链一行显示更多 */
+[data-theme=light] .site-card {
+  background-color: var(--hh-trans-color);
+}
+
+[data-theme=dark] .site-card {
+  border: 1px solid #525252 !important;
+  background-color: #343434e8 !important;
+}
+
 .site-card {
   width: calc(100% / 5 - 16px) !important;
   border-radius: 18px !important;
+  border: 1px solid #d3d3d3 !important;
+  padding: 5px !important;
 }
+.site-card:not(.mini-link) {
+  height: 245px !important;
+}
+
 .site-card .img {
   height: 165px !important;
   border-radius: 18px !important;
