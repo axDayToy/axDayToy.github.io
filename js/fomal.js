@@ -1177,7 +1177,7 @@ function createtime2() {
       "color:white; background-color:#10bcc0",
       "",
       "",
-      'background:url("https://unpkg.zhimg.com/anzhiyu-assetsaxjyh@latest/image/common/tinggge.gif") no-repeat;font-size:450%'
+      'background:url("https://unpkg.zhimg.com/anzhiyu-assetsaxpicgo@latest/image/common/tinggge.gif") no-repeat;font-size:450%'
     )
   );
 
@@ -3189,10 +3189,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/dm12.webp);
-    --darkmode-bg:url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/dark_mode.webp);
-    --mobileday-bg: url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/snow.webp);
-    --mobilenight-bg: url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/mb8.webp);
+    --default-bg: url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/dm12.webp);
+    --darkmode-bg:url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/dark_mode.webp);
+    --mobileday-bg: url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/snow.webp);
+    --mobilenight-bg: url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/mb8.webp);
   }`;
 }
 // 切换背景主函数
@@ -3422,7 +3422,7 @@ function createWinbox() {
 <h3>1. 二次元</h3>
 <details class="folding-tag" cyan><summary> 查看二次元背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/home_bg.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/home_bg.webp)" class="imgbox" onclick="changeBg('url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/home_bg.webp)')"></a></div>
               </div>
             </details>
 
@@ -3431,7 +3431,7 @@ function createWinbox() {
 
 <details class="folding-tag" cyan><summary> 查看风景背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/fj1.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/fj1.webp)" class="imgbox" onclick="changeBg('url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/fj1.webp)')"></a></div>
               </div>
             </details>
 
@@ -3439,7 +3439,7 @@ function createWinbox() {
 
 <details class="folding-tag" cyan><summary> 查看萌宠背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/mc1.webp)" class="imgbox" onclick="changeBg('url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/mc1.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/mc1.webp)" class="imgbox" onclick="changeBg('url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/mc1.webp)')"></a></div>
               </div>
             </details>
 
@@ -3463,7 +3463,7 @@ function createWinbox() {
 <h3>6. 适配手机</h3>
 <details class="folding-tag" cyan><summary> 查看适配手机的背景 </summary>
               <div class='content'>
-              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/mb4.webp)" class="pimgbox" onclick="changeBg('url(https://fastly.jsdelivr.net/npm/axjyh@latest/img/mb4.webp)')"></a></div>
+              <div class="bgbox"><a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/mb4.webp)" class="pimgbox" onclick="changeBg('url(https://fastly.jsdelivr.net/npm/axpicgo@latest/img/mb4.webp)')"></a></div>
               </div>
             </details>
 
