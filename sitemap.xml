@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.axcode.cn/life/gallery/index.html</loc>
+    
+    <lastmod>2024-06-06</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.axcode.cn/posts/55be2d10.html</loc>
     
     <lastmod>2024-06-06</lastmod>
@@ -11,7 +20,7 @@
   </url>
   
   <url>
-    <loc>https://www.axcode.cn/box/gallery/phone/index.html</loc>
+    <loc>https://www.axcode.cn/life/gallery/phone/index.html</loc>
     
     <lastmod>2024-06-06</lastmod>
     
@@ -20,16 +29,7 @@
   </url>
   
   <url>
-    <loc>https://www.axcode.cn/box/gallery/index.html</loc>
-    
-    <lastmod>2024-06-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.axcode.cn/box/gallery/photo/index.html</loc>
+    <loc>https://www.axcode.cn/life/gallery/photo/index.html</loc>
     
     <lastmod>2024-06-06</lastmod>
     
@@ -101,34 +101,7 @@
   </url>
   
   <url>
-    <loc>https://www.axcode.cn/site/census/index.html</loc>
-    
-    <lastmod>2024-06-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.axcode.cn/site/time/index.html</loc>
-    
-    <lastmod>2024-06-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.axcode.cn/life/movies/index.html</loc>
-    
-    <lastmod>2024-06-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.axcode.cn/life/games/index.html</loc>
     
     <lastmod>2024-06-01</lastmod>
     
@@ -172,15 +145,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://www.axcode.cn/site/echarts/index.html</loc>
-    
-    <lastmod>2022-09-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://www.axcode.cn/</loc>
@@ -191,14 +155,14 @@
 
   
   <url>
-    <loc>https://www.axcode.cn/tags/Hexo-Butterfly/</loc>
+    <loc>https://www.axcode.cn/tags/Markdown/</loc>
     <lastmod>2024-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.axcode.cn/tags/Markdown/</loc>
+    <loc>https://www.axcode.cn/tags/Hexo-Butterfly/</loc>
     <lastmod>2024-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -207,14 +171,14 @@
 
   
   <url>
-    <loc>https://www.axcode.cn/categories/%E9%AD%94%E6%94%B9%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://www.axcode.cn/categories/%E6%BC%94%E7%A4%BA/</loc>
     <lastmod>2024-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.axcode.cn/categories/%E6%BC%94%E7%A4%BA/</loc>
+    <loc>https://www.axcode.cn/categories/%E9%AD%94%E6%94%B9%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2024-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
