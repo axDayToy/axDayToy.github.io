@@ -2,7 +2,7 @@ if(window.location.href == 'http://localhost:4000/life/music/'|| window.location
   document.getElementById("rightside-config-hide").remove();
   document.getElementById("rightside-config-show").remove();
   // document.getElementById("fps").remove();
-  // Snackbar.show({ actionText: '关闭',text: '如果没有播放器，请刷新页面',backgroundColor: '#e27474',actionTextColor: '#ffffff',pos: 'bottom-center',duration: '2000' });
+  Snackbar.show({ actionText: '关闭',text: '如果没有播放器，请刷新页面',backgroundColor: '#e27474',actionTextColor: '#ffffff',pos: 'bottom-center',duration: '2000' });
 } 
 var anzhiyu = {
     // 音乐节目切换背景
