@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>vue使用ElementUI table实现展开行功能</title>
+      <link href="/posts/41b1953a.html"/>
+      <url>/posts/41b1953a.html</url>
+      
+        <content type="html"><![CDATA[<h3 id="效果预览">效果预览</h3><p><img src="https://bu.dusays.com/2024/06/09/6665b854026be.webp" alt=""></p><h3 id="使用场景">使用场景</h3><p>当行内容过多并且不想显示横向滚动条时 或者是需要展示当前物品下所属的资产时 可以使用 Table 展开行功能。</p><h3 id="重点参数">重点参数</h3><ol><li>expand-change： 当用户对某一行展开或者关闭的时候会触发该事件（展开行时，回调的第二个参数为 expandedRows：树形表格时第二参数为 expanded）</li><li>expandedRows：其实就只当前展开行的合集。</li><li>type： 对应列的类型。如果设置了 selection 则显示多选框；如果设置了 index 则显示该行的索引（从 1 开始计算）；如果设置了 expand 则显示为一个可展开的按钮。</li><li>toggleRowExpansion：用于可展开表格与树形表格，切换某一行的展开状态，如果使用了第二个参数，则是设置这一行展开与否  参数(row,expanded expanded 为 true 则展开)</li></ol><h3 id="代码示例">代码示例</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">el-table</span> <span class="attr">fit</span> <span class="attr">border</span> <span class="attr">size</span>=<span class="string">&quot;small&quot;</span>  <span class="attr">:data</span>=<span class="string">&quot;deviceList&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;dataTreeList&quot;</span> <span class="attr">style</span>=<span class="string">&quot;width: 100%&quot;</span>  @<span class="attr">expand-change</span>=<span class="string">&quot;handleExpandChange&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">el-table-column</span> <span class="attr">type</span>=<span class="string">&quot;expand&quot;</span>&gt;</span></span><br><span class="line">    // 如果表头需要统一管理按钮 可加入以下代码</span><br><span class="line">      <span class="tag">&lt;<span class="name">template</span> <span class="attr">slot</span>=<span class="string">&quot;header&quot;</span> <span class="attr">slot-scope</span>=<span class="string">&quot;scope&quot;</span>&gt;</span></span><br><span class="line">         <span class="tag">&lt;<span class="name">el-button</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">size</span>=<span class="string">&quot;mini&quot;</span> @<span class="attr">click</span>=<span class="string">&quot;toggleRowExpansion&quot;</span>&gt;</span>&#123;&#123; isExpansion ? &quot;关闭&quot; : &quot;展开&quot; &#125;<span class="tag">&lt;/<span class="name">el-button</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">template</span> <span class="attr">slot-scope</span>=<span class="string">&quot;scope&quot;</span>&gt;</span>加入需要折叠的代码<span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">el-table-column</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">el-table</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">    <span class="comment">/** 表格展开与关闭 */</span></span><br><span class="line">    <span class="title function_">toggleRowExpansion</span>(<span class="params"></span>)&#123;</span><br><span class="line">      <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">deviceList</span>.<span class="property">length</span>)&#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">isExpansion</span> = !<span class="variable language_">this</span>.<span class="property">isExpansion</span>;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="title function_">toggleRowExpansionAll</span>(<span class="variable language_">this</span>.<span class="property">deviceList</span>, <span class="variable language_">this</span>.<span class="property">isExpansion</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="title function_">toggleRowExpansionAll</span>(<span class="params">data, isExpansion</span>) &#123;</span><br><span class="line">      data.<span class="title function_">forEach</span>(<span class="function">(<span class="params">item</span>) =&gt;</span> &#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">$refs</span>.<span class="property">dataTreeList</span>.<span class="title function_">toggleRowExpansion</span>(item, isExpansion);</span><br><span class="line">        <span class="keyword">if</span> (item.<span class="property">children</span> !== <span class="literal">undefined</span> &amp;&amp; item.<span class="property">children</span> !== <span class="literal">null</span>) &#123;</span><br><span class="line">          <span class="variable language_">this</span>.<span class="title function_">toggleRowExpansionAll</span>(item.<span class="property">children</span>, isExpansion);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line">  <span class="comment">// 判断是否所有行都展开或者关闭</span></span><br><span class="line">  <span class="title function_">handleExpandChange</span>(<span class="params">row,rows</span>)&#123;</span><br><span class="line">    <span class="keyword">if</span>(<span class="variable language_">this</span>.<span class="property">deviceList</span>.<span class="property">length</span> == rows.<span class="property">length</span>)&#123;</span><br><span class="line">         <span class="variable language_">this</span>.<span class="property">isExpansion</span> = <span class="literal">true</span></span><br><span class="line">   &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="variable language_">this</span>.<span class="property">isExpansion</span> = <span class="literal">false</span></span><br><span class="line">     &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Vu3快速上手笔记</title>
       <link href="/posts/49eb0ff9.html"/>
       <url>/posts/49eb0ff9.html</url>
@@ -20,7 +45,7 @@
       
         <tags>
             
-            <tag> 前端、Vue </tag>
+            <tag> Vue </tag>
             
         </tags>
       
