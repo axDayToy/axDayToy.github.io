@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.axcode.cn/posts/49eb0ff9.html</loc>
+    
+    <lastmod>2024-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axcode.cn/posts/55be2d10.html</loc>
+    
+    <lastmod>2024-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.axcode.cn/life/music/index.html</loc>
     
     <lastmod>2024-06-08</lastmod>
@@ -41,15 +59,6 @@
     <loc>https://www.axcode.cn/box/nav/index.html</loc>
     
     <lastmod>2024-06-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.axcode.cn/posts/55be2d10.html</loc>
-    
-    <lastmod>2024-06-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -128,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://www.axcode.cn/personal/bb/index.html</loc>
+    <loc>https://www.axcode.cn/life/movies/index.html</loc>
     
     <lastmod>2024-06-01</lastmod>
     
@@ -137,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://www.axcode.cn/life/movies/index.html</loc>
+    <loc>https://www.axcode.cn/personal/bb/index.html</loc>
     
     <lastmod>2024-06-01</lastmod>
     
@@ -177,6 +186,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://www.axcode.cn/tags/%E5%89%8D%E7%AB%AF%E3%80%81Vue/</loc>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -188,6 +204,13 @@
   
   <url>
     <loc>https://www.axcode.cn/categories/%E6%BC%94%E7%A4%BA/</loc>
+    <lastmod>2024-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axcode.cn/categories/Vue/</loc>
     <lastmod>2024-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
