@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.axcode.cn/life/gallery/photo/index.html</loc>
+    
+    <lastmod>2024-06-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axcode.cn/life/gallery/phone/index.html</loc>
+    
+    <lastmod>2024-06-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.axcode.cn/posts/41b1953a.html</loc>
     
     <lastmod>2024-06-09</lastmod>
@@ -39,24 +57,6 @@
   
   <url>
     <loc>https://www.axcode.cn/life/music/index.html</loc>
-    
-    <lastmod>2024-06-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.axcode.cn/life/gallery/phone/index.html</loc>
-    
-    <lastmod>2024-06-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.axcode.cn/life/gallery/photo/index.html</loc>
     
     <lastmod>2024-06-08</lastmod>
     
