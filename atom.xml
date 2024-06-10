@@ -6,7 +6,7 @@
   <link href="https://www.axcode.cn/atom.xml" rel="self"/>
   
   <link href="https://www.axcode.cn/"/>
-  <updated>2024-06-09T14:33:45.430Z</updated>
+  <updated>2024-06-10T06:07:57.456Z</updated>
   <id>https://www.axcode.cn/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue中使用Fullcalendar日历开发日程安排</title>
+    <link href="https://www.axcode.cn/posts/c16a7e1e.html"/>
+    <id>https://www.axcode.cn/posts/c16a7e1e.html</id>
+    <published>2024-06-10T06:01:06.000Z</published>
+    <updated>2024-06-10T06:07:57.456Z</updated>
+    
+    
+    <summary type="html">Vue中使用Fullcalendar日历开发日程安排</summary>
+    
+    
+    
+    <category term="Vue" scheme="https://www.axcode.cn/categories/Vue/"/>
+    
+    
+    <category term="Vue" scheme="https://www.axcode.cn/tags/Vue/"/>
+    
+  </entry>
   
   <entry>
     <title>vue使用ElementUI table实现展开行功能</title>
