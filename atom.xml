@@ -6,7 +6,7 @@
   <link href="https://www.axcode.cn/atom.xml" rel="self"/>
   
   <link href="https://www.axcode.cn/"/>
-  <updated>2024-06-11T07:45:13.605Z</updated>
+  <updated>2024-06-12T05:33:00.197Z</updated>
   <id>https://www.axcode.cn/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于Mac 电脑访问不了 github 问题解决实践</title>
+    <link href="https://www.axcode.cn/posts/e65223e7.html"/>
+    <id>https://www.axcode.cn/posts/e65223e7.html</id>
+    <published>2024-06-12T04:21:13.000Z</published>
+    <updated>2024-06-12T05:33:00.197Z</updated>
+    
+    <content type="html"><![CDATA[<div class="tip info"><p>此文来自于简书作者 <a href='https://www.jianshu.com/u/f4f1f0438249' targt='_blank'>物联白菜</a> 本站只做记录使用，如有侵权，请联系站长删除！</p></div><div class="note info no-icon flat"><p>因为做开发，访问github网站是家常便饭的事，但是因为GitHub的IP地址是动态变化的，所以有时候可以访问有时候又不行，苦于烦恼网上找了解决方案，转自以下大佬的参考 ：</p><p><a herf='https://www.jianshu.com/p/b3559ac34590' target='_blank'>github访问不了问题解决</a> &amp;&amp; <a href='https://www.cnblogs.com/wanpi/p/14668174.html' target='_blank'>彻底解决各种浏览器访问不了GitHub问题</a></p><p><a href='https://blog.csdn.net/weixin_38629529/article/details/120788902' target='_blank'>Mac修改hosts文件方法链接</a></p><p>基本操作步骤如下</p></div><h2 id="1-获取github-com">1. <a href="http://xn--github-255j7672a.com">获取github.com</a></h2><div class="note blue no-icon flat"><p>访问 <a href="https://www.ipaddress.com/website/github.com/">https://www.ipaddress.com/website/github.com/</a> 获取一个如下图的地址</p><p><img src="https://bu.dusays.com/2024/06/12/66692948896a5.png" alt=""></p></div><h2 id="2-获取github-global-ssl-fastly-net">2. <a href="http://xn--github-255j7672a.global.ssl.fastly.net">获取github.global.ssl.fastly.net</a></h2><div class="note blue no-icon flat"><p>访问 <a href="https://www.ipaddress.com/website/github.global.ssl.fastly.net/">https://www.ipaddress.com/website/github.global.ssl.fastly.net/</a> 取得一个最新的地址如下</p><p><img src="https://bu.dusays.com/2024/06/12/666929e48155d.png" alt=""></p></div><h2 id="3-获取github-githubassets-com">3. <a href="http://xn--github-255j7672a.githubassets.com">获取github.githubassets.com</a></h2><div class="note blue no-icon flat"><p>访问https://www.ipaddress.com/website/github.githubassets.com/ 取得一个最新的地址如下</p><p><img src="https://bu.dusays.com/2024/06/12/66692ab2e807a.png" alt=""></p></div><h2 id="4-修改hosts文件，将获得的IP-地址配置进去并刷新DNS">4. 修改hosts文件，将获得的IP 地址配置进去并刷新DNS</h2><div class="note blue no-icon flat"><p>此文只针对Mac，windows系统的同学请看 <a href='https://www.cnblogs.com/wanpi/p/14668174.html' target='_blank'>彻底解决各种浏览器访问不了GitHub问题</a>。</p><p>Mac版hosts文件修改要通过 VI 操作才可以添加进去，不然改不了。</p><ol><li>终端输入 sudo vi /etc/hosts</li><li>输入电脑用户密码</li><li>输入i，进入插入模式</li><li>将上述地址复制粘贴进去</li><li>按Esc退出插入模式，然后输入 :wq， Enter保存退出</li><li>终端执行 sudo killall -HUP mDNSResponder 刷新dns</li></ol></div><div class="note icon-padding modern"><i class="note-icon fab fa-cc-visa"></i><p>过了一段时间只要感觉github有时候难访问了，重新执行一下<code>sudo killall -HUP mDNSResponder</code> 刷新dns就好了，可以把这个指令保存一下。</p><p>因为github IP地址会变化，所以我截图的IP地址会有不同，但没关系，复制你访问得到的IP地址就可以了，大功告成。</p><p>优先考虑用Chrome浏览器打开哈。</p></div><h2 id="5-https-stackoverflow-com-访问被墙解决办法">5. <a href="https://links.jianshu.com/go?to=https%3A%2F%2Fstackoverflow.com%2F">https://stackoverflow.com/</a> 访问被墙解决办法</h2><div class="note blue no-icon flat"><p>参考 <a href='https://www.codetd.com/article/4947217' target='_blank'>Stack Overflow 打不开，登录不上，火狐和Chrome浏览器的完美解决方案</a></p><p><strong>Firefox</strong>插件 <a href='https://addons.mozilla.org/en-US/firefox/addon/replace-google-cdn/' target="_blank">插件1</a> <a href='https://addons.mozilla.org/en-US/firefox/addon/google-cdn-replace/' target="_blank">插件2</a></p><p><strong>Chrome</strong> <a href='https://imgurl.ninedvr.com/app/ReplaceGoogleCDN-master.zip' target="_blank">拓展程序插件下载</a> 解压之后将<code>extension``extension-v2</code>添加到扩展程序中。</p><p><a href='https://mirrors.ustc.edu.cn/' target='_blank'>高校开源镜像源</a></p></div>]]></content>
+    
+    
+    <summary type="html">🥝关于Mac 电脑访问不了 github 问题解决实践</summary>
+    
+    
+    
+    <category term="Gt" scheme="https://www.axcode.cn/categories/Gt/"/>
+    
+    
+    <category term="Git" scheme="https://www.axcode.cn/tags/Git/"/>
+    
+  </entry>
   
   <entry>
     <title>JS十大排序算法</title>
