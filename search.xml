@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Vue判断用户长时间未操作清除token并退出登录</title>
+      <link href="/posts/6263542e.html"/>
+      <url>/posts/6263542e.html</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"> &lt;template&gt;</span><br><span class="line">    &lt;div id =&quot;app&quot; @click=&quot;isDo()&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">exoprt default&#123;</span><br><span class="line">  data()&#123;</span><br><span class="line">    return&#123;</span><br><span class="line">        lastTime:null, //第一次点击事件</span><br><span class="line">        currentTime:null,  //当前点击事件</span><br><span class="line">        timeOut:30*60*1000 // 设置超时时间：30分钟</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  created()&#123;</span><br><span class="line">    this.lastTime  = new Date().getTime();  // 网页第一次打开时，记录当前时间</span><br><span class="line">  &#125;,</span><br><span class="line">   mounted()&#123;</span><br><span class="line">      var quitTIme = window.setInterval(this.testTime,1000);</span><br><span class="line">  &#125;,</span><br><span class="line">  methods:&#123;</span><br><span class="line">    isDo()&#123;</span><br><span class="line">      this.currentTime = new Date().getTime(); // 记录当前点击的时间</span><br><span class="line">      if(this.currentTIme - this.lastTime &gt; this.timeOut)&#123; //判断上次最后一次的点击时间和最新的点击时间间隔时候大于30分钟</span><br><span class="line">      // 这里写状态已过期后执行的操作</span><br><span class="line">      localStorage.removeItem(&quot;token&quot;);</span><br><span class="line">       this.$router.push(&#123; path: &#x27;/login&#x27; &#125;);</span><br><span class="line">        // 清除定时器</span><br><span class="line">       window.clearInterval(quitTIme);</span><br><span class="line">      &#125;else&#123;</span><br><span class="line">        this.lastTime  = new Date().getTime(); //如果30分之内点击，则把最新时间记录覆盖掉之前存的最后一次点击时间</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vue </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ts基础手记（一）</title>
       <link href="/posts/8c4a663e.html"/>
       <url>/posts/8c4a663e.html</url>
