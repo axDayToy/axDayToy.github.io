@@ -272,13 +272,6 @@
 
   
   <url>
-    <loc>https://www.axcode.cn/tags/Markdown/</loc>
-    <lastmod>2024-06-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.axcode.cn/tags/Hexo-Butterfly/</loc>
     <lastmod>2024-06-18</lastmod>
     <changefreq>weekly</changefreq>
@@ -286,7 +279,7 @@
   </url>
   
   <url>
-    <loc>https://www.axcode.cn/tags/Js/</loc>
+    <loc>https://www.axcode.cn/tags/Markdown/</loc>
     <lastmod>2024-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -294,6 +287,13 @@
   
   <url>
     <loc>https://www.axcode.cn/tags/Vue/</loc>
+    <lastmod>2024-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axcode.cn/tags/Js/</loc>
     <lastmod>2024-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -313,21 +313,7 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>https://www.axcode.cn/tags/ts/</loc>
-    <lastmod>2024-06-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>https://www.axcode.cn/categories/%E6%BC%94%E7%A4%BA/</loc>
-    <lastmod>2024-06-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://www.axcode.cn/categories/%E9%AD%94%E6%94%B9%E8%AE%B0%E5%BD%95/</loc>
@@ -337,7 +323,7 @@
   </url>
   
   <url>
-    <loc>https://www.axcode.cn/categories/Js/</loc>
+    <loc>https://www.axcode.cn/categories/%E6%BC%94%E7%A4%BA/</loc>
     <lastmod>2024-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -345,6 +331,13 @@
   
   <url>
     <loc>https://www.axcode.cn/categories/Vue/</loc>
+    <lastmod>2024-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axcode.cn/categories/Js/</loc>
     <lastmod>2024-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -359,13 +352,6 @@
   
   <url>
     <loc>https://www.axcode.cn/categories/Ts/</loc>
-    <lastmod>2024-06-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.axcode.cn/categories/ts/</loc>
     <lastmod>2024-06-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
