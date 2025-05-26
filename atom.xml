@@ -6,7 +6,7 @@
   <link href="https://www.axcode.cn/atom.xml" rel="self"/>
   
   <link href="https://www.axcode.cn/"/>
-  <updated>2025-05-26T05:31:06.451Z</updated>
+  <updated>2025-05-26T08:08:29.325Z</updated>
   <id>https://www.axcode.cn/</id>
   
   <author>
@@ -17,14 +17,16 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Python基础学习笔记</title>
-    <link href="https://www.axcode.cn/posts/55cb2194.html"/>
-    <id>https://www.axcode.cn/posts/55cb2194.html</id>
-    <published>2025-05-26T05:24:56.000Z</published>
-    <updated>2025-05-26T05:31:06.451Z</updated>
+    <title>Python基础学习</title>
+    <link href="https://www.axcode.cn/posts/624e0a2.html"/>
+    <id>https://www.axcode.cn/posts/624e0a2.html</id>
+    <published>2025-05-26T05:49:14.000Z</published>
+    <updated>2025-05-26T08:08:29.325Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="注释">注释</h2><h3 id="块注释">块注释</h3><p><img src="https://bu.dusays.com/2025/05/26/68341d555cd07.png" alt=""></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 打印数字</span></span><br><span class="line"><span class="built_in">print</span>(<span class="number">2025</span>)</span><br></pre></td></tr></table></figure><h3 id="行内注释">行内注释</h3><p><img src="https://bu.dusays.com/2025/05/26/68341d5470bf6.png" alt=""></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;我在学习python&#x27;</span>)  <span class="comment"># 行内注释</span></span><br></pre></td></tr></table></figure><h3 id="多行注释">多行注释</h3><p>以三对双引号 <span class='p red'>or</span> 三对单引号开始和结尾</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">我是多行注释</span></span><br><span class="line"><span class="string">1111</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;我是多行注释 &#x27;</span>)</span><br></pre></td></tr></table></figure><h3 id="注释的作用">注释的作用</h3><p><img src="https://bu.dusays.com/2025/05/26/68341d55731b3.png" alt=""></p><h2 id="print-函数：输出-打印指定内容">print()函数：输出/打印指定内容</h2><p><img src="https://bu.dusays.com/2025/05/26/68341d5575a7d.png" alt=""></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">year = <span class="number">2025</span></span><br><span class="line">month = <span class="number">5</span></span><br><span class="line">day = <span class="number">26</span></span><br><span class="line">week = <span class="string">&#x27;一&#x27;</span></span><br><span class="line">weather = <span class="string">&#x27;晴&#x27;</span></span><br><span class="line">temp = <span class="number">34.5</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&#x27;今天是 %d 年 %02d 月 %d 日, 星期 %s, 天气 %s, 气温 %.1f 摄氏度&#x27;</span> % (year, month, day, week, weather, temp))</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><img src="https://bu.dusays.com/2025/05/26/6834215a31bd3.png" alt=""></p>]]></content>
     
     
-    <summary type="html">🍋‍🟩Python基础学习笔记</summary>
+    <summary type="html">🍋‍🟩Python基础学习</summary>
     
     
     

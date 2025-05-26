@@ -92,7 +92,16 @@ $.ajax({
   },
   dataType: 'jsonp',
   success: function (res) {
-    ipLoacation = res;
+    if(res.status == 0){
+      ipLoacation = res;
+    }else{
+      console.error("定位失败:", res.message);
+      document.getElementById("welcome-info").innerHTML = "无法获取位置信息。"
+    }
+  },
+  error:function(error) {
+    console.error("请求失败:", err);
+    document.getElementById("welcome-info").innerHTML = "定位服务不可用。";
   }
 })
 function getDistance(e1, n1, e2, n2) {
@@ -113,7 +122,7 @@ function getDistance(e1, n1, e2, n2) {
 
 function showWelcome() {
 
-  let dist = getDistance(107.27025500000002, 35.70183, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
+  let dist = getDistance(107.643631, 35.709077, ipLoacation.result.location.lng, ipLoacation.result.location.lat); //这里换成自己的经纬度
   let pos = ipLoacation.result.ad_info.nation;
   let ip;
   let posdesc;
@@ -145,7 +154,7 @@ function showWelcome() {
       break;
     case "中国":
       pos = ipLoacation.result.ad_info.province + " " + ipLoacation.result.ad_info.city + " " + ipLoacation.result.ad_info.district;
-      ip = ipLoacation.result.ip;
+      ip = ipLoacation.result.location;
       switch (ipLoacation.result.ad_info.province) {
         case "北京市":
           posdesc = "北——京——欢迎您~~~";
@@ -299,7 +308,12 @@ function showWelcome() {
   try {
     //自定义文本和需要放的位置
     document.getElementById("welcome-info").innerHTML =
-      `<b><center>🎉 欢迎信息 🎉</center>&emsp;&emsp;欢迎来自 <span style="color:var(--theme-color)">${pos}</span> 的小伙伴，${timeChange}您现在距离站长约 <span style="color:var(--theme-color)">${dist}</span> 公里，当前的IP地址为： <span style="color:var(--theme-color)">${ip}</span>， ${posdesc}</b>`;
+      `<b><center>🎉 欢迎信息 🎉</center>&emsp;&emsp;欢迎来自 
+      <span style="color:var(--theme-color)">${pos}</span> 的小伙伴，${timeChange}
+      您现在距离站长约 <span style="color:var(--theme-color)">${dist}</span> 公里，
+      当前的经纬度为：<span style="color:var(--theme-color)">东经${ip.lng}°</span>，
+      <span style="color:var(--theme-color)">北纬${ip.lat}°</span>，
+       ${posdesc}</b>`;
   } catch (err) {
     // console.log("Pjax无法获取#welcome-info元素🙄🙄🙄")
   }
