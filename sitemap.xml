@@ -4,7 +4,25 @@
   <url>
     <loc>https://www.axcode.cn/posts/efbf8bf9.html</loc>
     
-    <lastmod>2025-06-07</lastmod>
+    <lastmod>2025-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axcode.cn/posts/3035262d.html</loc>
+    
+    <lastmod>2025-06-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axcode.cn/posts/d874c695.html</loc>
+    
+    <lastmod>2025-06-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -443,6 +461,13 @@
   
   <url>
     <loc>https://www.axcode.cn/categories/Python/</loc>
+    <lastmod>2025-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.axcode.cn/categories/Git/</loc>
     <lastmod>2025-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
